@@ -28,12 +28,12 @@
 
 	<div class="spropmeta">
 <h3><?php the_title(); ?></h3>
-	<div class="sproplist"><span>Location</span> <span class="propval"> <?php echo get_the_term_list( $post->ID, 'location', '', ' ', '' ); ?></span></div>
-	<div class="sproplist"><span>Property type</span> <span class="propval"><?php echo get_the_term_list( $post->ID, 'property', '', ' ', '' ); ?></span></div>
-	<div class="sproplist"><span>Area</span> <span class="propval"> <?php echo get_the_term_list( $post->ID, 'area', '', ' ', '' ); ?></span></div>
-	<div class="sproplist"><span>Bedrooms</span> <span class="propval"> <?php echo get_the_term_list( $post->ID, 'bedrooms', '', ' ', '' ); ?></span></div>
-	<div class="sproplist"><span>Bath</span> <span class="propval"> <?php $bath=get_post_meta($post->ID, 'wtf_bath', true); echo $bath; ?></span></div>
-	<div class="sproplist"><span>Garage</span> <span class="propval"> <?php $garage=get_post_meta($post->ID, 'wtf_garage', true); echo $garage; ?></span></div>
+	<div class="sproplist"><span>Ubicacion</span> <span class="propval"> <?php echo get_the_term_list( $post->ID, 'ubicacion', '', ' ', '' ); ?></span></div>
+	<div class="sproplist"><span>Tipos de propiedad</span> <span class="propval"><?php echo get_the_term_list( $post->ID, 'propiedad', '', ' ', '' ); ?></span></div>
+	<div class="sproplist"><span>Zona</span> <span class="propval"> <?php echo get_the_term_list( $post->ID, 'zona', '', ' ', '' ); ?></span></div>
+	<div class="sproplist"><span>Dormitorios</span> <span class="propval"> <?php echo get_the_term_list( $post->ID, 'Dormitorios', '', ' ', '' ); ?></span></div>
+	<div class="sproplist"><span>Baños</span> <span class="propval"> <?php $bath=get_post_meta($post->ID, 'wtf_baños', true); ?></span></div>
+	<div class="sproplist"><span>Estacionamientos</span> <span class="propval"> <?php $garage=get_post_meta($post->ID, 'wtf_estacionamientos', true); ?></span></div>
 			
 	</div>
 
